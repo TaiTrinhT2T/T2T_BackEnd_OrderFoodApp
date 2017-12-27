@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatmonanModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DatHang">
+    <Key>
+      <PropertyRef Name="ID_DonHang" />
+      <PropertyRef Name="ID_MonAn" />
+    </Key>
+    <Property Name="ID_DonHang" Type="int" Nullable="false" />
+    <Property Name="ID_MonAn" Type="int" Nullable="false" />
+    <Property Name="SoLuong" Type="int" />
+  </EntityType>
+  <EntityType Name="DonHang">
+    <Key>
+      <PropertyRef Name="ID_DonHang" />
+      <PropertyRef Name="ID_TaiKhoan" />
+      <PropertyRef Name="ID_NhaHang" />
+    </Key>
+    <Property Name="ID_DonHang" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_TaiKhoan" Type="int" Nullable="false" />
+    <Property Name="ID_NhaHang" Type="int" Nullable="false" />
+    <Property Name="ThoiGian" Type="datetime" />
+    <Property Name="TrangThai" Type="int" />
+  </EntityType>
+  <EntityType Name="GiaBan">
+    <Key>
+      <PropertyRef Name="ID_GiaBan" />
+      <PropertyRef Name="ID_MonAn" />
+    </Key>
+    <Property Name="ID_GiaBan" Type="int" Nullable="false" />
+    <Property Name="ID_MonAn" Type="int" Nullable="false" />
+    <Property Name="GiaBan" Type="nvarchar" MaxLength="50" />
+    <Property Name="GiaKhuyenMai" Type="nvarchar" MaxLength="50" />
+    <Property Name="ThoiGianBatDau" Type="datetime" />
+    <Property Name="ThoiGianKetThuc" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Loai">
+    <Key>
+      <PropertyRef Name="ID_LoaiMonAn" />
+    </Key>
+    <Property Name="ID_LoaiMonAn" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Tên" Type="nvarchar" MaxLength="50" />
+    <Property Name="MoTa" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="LoaiMonAn">
+    <Key>
+      <PropertyRef Name="ID_MonAn" />
+      <PropertyRef Name="ID_LoaiMonAn" />
+    </Key>
+    <Property Name="ID_MonAn" Type="int" Nullable="false" />
+    <Property Name="ID_LoaiMonAn" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MonAn">
+    <Key>
+      <PropertyRef Name="ID_MonAn" />
+    </Key>
+    <Property Name="ID_MonAn" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenMonAn" Type="nvarchar" MaxLength="50" />
+    <Property Name="MoTa" Type="nvarchar" MaxLength="500" />
+    <Property Name="SrcImg" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="MonAnYeuThich">
+    <Key>
+      <PropertyRef Name="ID_TaiKhoan" />
+      <PropertyRef Name="ID_MonAn" />
+    </Key>
+    <Property Name="ID_TaiKhoan" Type="int" Nullable="false" />
+    <Property Name="ID_MonAn" Type="int" Nullable="false" />
+    <Property Name="YeuThich" Type="bit" />
+  </EntityType>
+  <EntityType Name="NhaHang">
+    <Key>
+      <PropertyRef Name="ID_NhaHang" />
+    </Key>
+    <Property Name="ID_NhaHang" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenNhaHang" Type="nvarchar" MaxLength="50" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="50" />
+    <Property Name="ViTri" Type="nvarchar" MaxLength="500" />
+    <Property Name="SoDienThoai" Type="nvarchar" MaxLength="50" />
+    <Property Name="MoTa" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="TaiKhoan">
+    <Key>
+      <PropertyRef Name="ID_TaiKhoan" />
+    </Key>
+    <Property Name="ID_TaiKhoan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenTaiKhoan" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="SoDienThoai" Type="nvarchar" MaxLength="50" />
+    <Property Name="TienNap" Type="nvarchar" MaxLength="50" />
+    <Property Name="MatKhau" Type="nvarchar" MaxLength="50" />
+    <Property Name="Online" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="DatmonanModelStoreContainer">
+    <EntitySet Name="DatHang" EntityType="Self.DatHang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DonHang" EntityType="Self.DonHang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GiaBan" EntityType="Self.GiaBan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Loai" EntityType="Self.Loai" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LoaiMonAn" EntityType="Self.LoaiMonAn" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MonAn" EntityType="Self.MonAn" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MonAnYeuThich" EntityType="Self.MonAnYeuThich" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NhaHang" EntityType="Self.NhaHang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TaiKhoan" EntityType="Self.TaiKhoan" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

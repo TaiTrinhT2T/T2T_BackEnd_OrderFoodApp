@@ -1,0 +1,157 @@
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\csc.exe
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\System.Collections.Immutable.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\System.Reflection.Metadata.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\vbc.exe
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\VBCSCompiler.exe
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\VBCSCompiler.exe.config
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\DatMonAn_Cloud.dll.config
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\DatMonAn_Cloud.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\DatMonAn_Cloud.pdb
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Antlr3.Runtime.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\EntityFramework.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\EntityFramework.SqlServer.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.Google.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Web.Infrastructure.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Newtonsoft.Json.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Owin.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Net.Http.Formatting.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Helpers.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Http.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Http.Owin.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Http.WebHost.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Mvc.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Optimization.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Razor.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.WebPages.Deployment.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.WebPages.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.WebPages.Razor.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\WebGrease.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Newtonsoft.Json.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Net.Http.Formatting.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Helpers.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Http.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Http.WebHost.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Mvc.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Optimization.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Razor.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.WebPages.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.WebPages.Deployment.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.WebPages.Razor.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Antlr3.Runtime.pdb
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\EntityFramework.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\EntityFramework.SqlServer.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.Google.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Http.Owin.xml
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\obj\Release\DatMonAn_Cloud.csprojResolveAssemblyReference.cache
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\obj\Release\DatMonAn_Cloud.dll
+E:\Jquery\DatMonAn_Cloud\DatMonAn_Cloud\obj\Release\DatMonAn_Cloud.pdb
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\csc.exe
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\System.Collections.Immutable.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\System.Reflection.Metadata.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\vbc.exe
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\VBCSCompiler.exe
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\roslyn\VBCSCompiler.exe.config
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\DatMonAn_Cloud.dll.config
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\DatMonAn_Cloud.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\DatMonAn_Cloud.pdb
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Antlr3.Runtime.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\EntityFramework.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\EntityFramework.SqlServer.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.AspNet.Identity.Core.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.Cookies.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.Facebook.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.Google.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.OAuth.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.Twitter.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Web.Infrastructure.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Newtonsoft.Json.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Owin.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Net.Http.Formatting.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Helpers.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Http.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Http.Owin.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Http.WebHost.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Mvc.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Optimization.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Razor.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.WebPages.Deployment.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.WebPages.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.WebPages.Razor.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\WebGrease.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Newtonsoft.Json.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Net.Http.Formatting.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Helpers.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Http.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Http.WebHost.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Mvc.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Optimization.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Razor.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.WebPages.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.WebPages.Deployment.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.WebPages.Razor.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Antlr3.Runtime.pdb
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\EntityFramework.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\EntityFramework.SqlServer.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.AspNet.Identity.Core.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.Facebook.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.Cookies.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.OAuth.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.Google.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.Twitter.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Http.Owin.xml
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\obj\Release\DatMonAn_Cloud.csprojResolveAssemblyReference.cache
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\obj\Release\DatMonAn_Cloud.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\obj\Release\DatMonAn_Cloud.pdb
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Cors.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Http.Cors.dll
+F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\bin\System.Web.Http.Cors.xml

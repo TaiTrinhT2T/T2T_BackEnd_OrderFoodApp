@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\obj\Release\Package\PackageTmp" />
+  <setAcl path="F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="F:\Hoc_Tap\Cac mon hoc khac\Ky 10\Cloud Computing\Đồ án cuối kỳ\New folder\DatMonAn_Cloud\DatMonAn_Cloud\DatMonAn_Cloud\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

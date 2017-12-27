@@ -1,0 +1,393 @@
+﻿
+@{
+    ViewBag.Title = "Test";
+    Layout = "~/Areas/Admin/Views/Shared/_Admin.cshtml";
+}
+
+@section Link {
+    <ul class="breadcrumb">
+        <li>
+            <i class="ace-icon fa fa-home home-icon"></i>
+            <a href="#">Admin</a>
+        </li>
+        <li>
+            <a href="#">Món ăn</a>
+        </li>
+        <li class="active">Danh sách món ăn</li>
+    </ul><!-- /.breadcrumb -->
+}
+
+<p>
+    <a id="btnAddMonAn" class="btn btn-info">Thêm món ăn</a>
+</p>
+
+<div class="row">
+    <div class="col-xs-10">
+
+        <div class="clearfix">
+            <div class="pull-right tableTools-container"></div>
+        </div>
+        <div class="table-header">
+            Danh sách Món ăn
+        </div>
+
+        <!-- div.table-responsive -->
+        <!-- div.dataTables_borderWrap -->
+        <div>
+            <div id="dynamic-table_wrapper" class="dataTables_wrapper form-inline no-footer">
+                <table id="dynamic-table" class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>@Html.DisplayName("Tên món ăn")</th>
+                            <th>@Html.DisplayName("Mô tả")</th>
+                            <th>@Html.DisplayName("SrcImg")</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="list-MonAns">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="dialog-question-delete" class="hide">
+    <div class="alert alert-info bigger-110" style="text-align:center">
+        Món ăn này sẽ bị xóa !!!
+    </div>
+    <div class="space-6"></div>
+    <p class="bigger-110 bolder center grey">
+        <i class="ace-icon fa fa-hand-o-right blue bigger-120"></i>
+        Bạn chắc chắn ?
+    </p>
+</div><!-- #dialog-confirm -->
+<div id="dialog-message" class="hide">
+    <div id="waiting-detail-monan" style="position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; background: white; display: flex; justify-content: center; align-items: center;">
+        <div style="width: 100px; height: 100px; background: url(/images/pep-loading.gif);"></div>
+    </div>
+    <div class="profile-user-info profile-user-info-striped">
+        <div class="profile-info-row">
+            <div class="profile-info-name"> Tên món ăn </div>
+
+            <div class="profile-info-value">
+                <span class="" id="MonAn-Ten" style="display: inline;"></span>
+            </div>
+        </div>
+
+        <div class="profile-info-row">
+            <div class="profile-info-name"> Mô tả </div>
+
+            <div class="profile-info-value">
+                <i class="fa fa-map-marker light-orange bigger-110"></i>
+                <span class="" id="MonAn-MoTa" style="display: inline;">Netherlands</span>
+            </div>
+        </div>
+
+        <div class="profile-info-row">
+            <div class="profile-info-name"> Src Image </div>
+
+            <div class="profile-info-value">
+                <span class="" id="MonAn-SrcImage">38</span>
+            </div>
+        </div>
+    </div>
+</div><!-- #dialog-message -->
+
+
+<div id="dialog-edit" class="hide">
+    <div id="waiting-edit" style="position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; background: white; display: flex; justify-content: center; align-items: center;">
+        <div style="width: 100px; height: 100px; background: url(/images/pep-loading.gif);"></div>
+    </div>
+    <div class="profile-user-info profile-user-info-striped">
+        <div class="profile-info-row">
+            <div class="profile-info-name"> Tên món ăn </div>
+
+            <div class="profile-info-value">
+                <input id="txtMonAnTen" type="text" value="" style="display: inline;" />
+            </div>
+        </div>
+        <div class="profile-info-row">
+            <div class="profile-info-name"> Mô tả </div>
+
+            <div class="profile-info-value">
+                <input id="txtMonAnMota" type="text" value="" style="display: inline;" />
+            </div>
+        </div>
+        <div class="profile-info-row">
+            <div class="profile-info-name"> Src Image </div>
+
+            <div class="profile-info-value">
+                <i class="fa fa-map-marker light-orange bigger-110"></i>
+                <input id="txtMonAnSrc" type="text" value="" style="display: inline;" />      
+            </div>
+        </div>
+    </div>
+</div><!-- #dialog-edit -->
+
+<link rel="stylesheet" href="/assets/css/ace.onpage-help.css" />
+<link rel="stylesheet" href="/assets/js/themes/sunburst.css" />
+
+
+<script src="/assets/js/bootstrap.js"></script>
+
+<script src="/assets/js/ace-extra.js"></script>
+
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/jquery-ui.js"></script>
+<script src="/assets/js/jquery.ui.touch-punch.js"></script>
+<script>
+    //override dialog's title function to allow for HTML titles
+    $.widget("ui.dialog", $.extend({}, $.ui.dialog.prototype, {
+        _title: function (title) {
+            var $title = this.options.title || '&nbsp;'
+            if (("title_html" in this.options) && this.options.title_html == true)
+                title.html($title);
+            else title.text($title);
+        }
+    }));
+
+    var monAnList = $('#list-MonAns');
+
+    var urlController = '/api/MonAns';
+
+    var loadEvent = function () {
+        // Event Click khi Click button Detail
+        $(".details-employee").on('click', function (e) {
+            e.preventDefault();
+            var monan_id = $(this).data('id');
+            $.ajax({
+                url: urlController,
+                type: "GET",
+                data: { id: monan_id },
+                contentType: "application/json; charset=utf-8", //sử dụng với data là 1 chuỗi string dạng json
+                dataType: "json",
+                beforeSend: function() {
+                    $('#waiting-detail-monan').show();
+                },
+                success: function (data) {
+                    $('#waiting-detail-monan').hide();
+                    $('#MonAn-Ten').text(data.TenMonAn);
+                    $('#MonAn-MoTa').text(data.MoTa);
+                    $('#MonAn-SrcImage').text(data.SrcImg);
+                },
+                error: function (error) {
+                    alert('Lỗi');
+                }
+            });
+            var dialog = $("#dialog-message").removeClass('hide').dialog({
+                modal: true,
+                title: "<div class='widget-header widget-header-small'><h4 class='smaller'></div>",
+                title_html: true,
+                width: 400,
+                buttons: [
+                    {
+                        text: "Đóng",
+                        "class": "btn btn-primary btn-minier ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only",
+                        click: function () {
+                            $(this).dialog("close");
+                        }
+                    }
+                ]
+            });
+        });
+
+        $(".edit-employee").on('click', function (e) {
+            e.preventDefault();
+            var employee_id = $(this).data('id');
+            $.ajax({
+                url: urlController,
+                type: "GET",
+                data: { id: employee_id },
+                contentType: "application/json; charset=utf-8", //sử dụng với data là 1 chuỗi string dạng json
+                dataType: "json",
+                beforeSend: function () {
+                    $('#waiting-edit').show();
+                },
+                success: function (data) {
+                    $('#waiting-edit').hide();
+
+                    $('#txtMonAnTen').val(data.TenMonAn);
+                    $('#txtMonAnMota').val(data.MoTa);
+                    $('#txtMonAnSrc').val(data.SrcImg);
+                },
+                error: function (error) {
+                    alert('Lỗi');
+                }
+            });
+            var dialog = $("#dialog-edit").removeClass('hide').dialog({
+                modal: true,
+                title: "<div class='widget-header widget-header-small'><h4 class='smaller'></div>",
+                title_html: true,
+                width: 400,
+                buttons: [
+                    {
+                        text: "Lưu",
+                        "class": "btn btn-primary btn-minier ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only",
+                        click: function () {
+                            var employeeEdit = {
+                                ID_MonAn: employee_id,
+                                TenMonAn: $('#txtMonAnTen').val(),
+                                MoTa: $('#txtMonAnMota').val(),
+                                SrcImg: $('#txtMonAnSrc').val(),
+                            };
+                            editEmployee(employeeEdit);
+                            $(this).dialog("close");
+                        }
+                    }
+                ]
+            });
+        });
+
+        $(".delete-employee").on('click', function (e) {
+            e.preventDefault();
+            var employee_id = $(this).data('id');
+            $("#dialog-question-delete").removeClass('hide').dialog({
+                resizable: false,
+                width: '320',
+                modal: true,
+                title: "<div class='widget-header'><h4 class='smaller'><i class='ace-icon fa fa-exclamation-triangle red'></i> Xóa nhân viên?</h4></div>",
+                title_html: true,
+                buttons: [
+                    {
+                        html: "<span class='ui-button-text'><i class='ace-icon fa fa-trash-o bigger-110'></i>&nbsp; Xác nhận</span>",
+                        "class": "btn btn-danger btn-minier ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only",
+                        click: function () {
+                            $.ajax({
+                                url: urlController,
+                                type: "DELETE",
+                                data: JSON.stringify({ ID_MonAn: employee_id }),
+                                contentType: "application/json; charset=utf-8", //sử dụng với data là 1 chuỗi string dạng json
+                                dataType: "json",
+                                success: function (data) {
+                                    getDataFromAPI();
+                                },
+                                error: function (error) {
+                                    alert('Lỗi');
+                                }
+                            });
+                            $(this).dialog("close");
+                        }
+                    }
+                    ,
+                    {
+                        html: "<span class='ui-button-text'><i class='ace-icon fa fa-times bigger-110'></i>&nbsp; Hủy</span>",
+                        "class": "btn btn-minier ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only",
+                        click: function () {
+                            $(this).dialog("close");
+                        }
+                    }
+                ]
+            });
+        });
+    }
+
+    var showListMonAn = function (data) {
+        let contentHtml = '';
+        data.forEach(function (monan) {
+            contentHtml += "<tr>";
+            contentHtml += "    <td>" + monan.TenMonAn + "</td>";
+            contentHtml += "    <td>" + monan.MoTa + "</td>";
+            contentHtml += "    <td class='hidden-480'>" + monan.SrcImg + "</td>";
+            contentHtml += "    <td>";
+            contentHtml += "        <div class='hidden-sm hidden-xs action-buttons'>";
+            contentHtml += "            <a class='blue details-employee' data-id='" + monan.ID_MonAn + "'>";
+            contentHtml += "                <i class='ace-icon fa fa-search-plus bigger-130'></i>";
+            contentHtml += "            </a>";
+            contentHtml += "            <a class='green edit-employee' data-id='" + monan.ID_MonAn + "'>";
+            contentHtml += "                <i class='ace-icon fa fa-pencil bigger-130'></i>";
+            contentHtml += "            </a>";
+            contentHtml += "            <a class='red delete-employee' data-id='" + monan.ID_MonAn + "'>";
+            contentHtml += "                <i class='ace-icon fa fa-trash-o bigger-130'></i></a>";
+            contentHtml += "        </div>";
+            contentHtml += "    </td>";
+            contentHtml += "</tr>";
+        });
+        monAnList.html(contentHtml);
+    }
+
+    var getDataFromAPI = function () {
+        $.ajax({
+            url: urlController,
+            type: "GET",
+            contentType: "application/json; charset=utf-8", //sử dụng với data là 1 chuỗi string dạng json
+            dataType: "json",
+            success: function (data) {
+                showListMonAn(data);
+                loadEvent();
+            },
+            error: function (error) {
+                alert('Lỗi');
+            }
+        });
+    }
+
+    var addNewEmployee = function (newEmployee) {
+        $.ajax({
+            url: urlController,
+            type: "POST",
+            data: JSON.stringify(newEmployee),
+            contentType: "application/json; charset=utf-8", //sử dụng với data là 1 chuỗi string dạng json
+            dataType: "json",
+            success: function (data) {
+                getDataFromAPI();
+            },
+            error: function (error) {
+                alert('Lỗi');
+            }
+        });
+    }
+
+    var editEmployee = function (employee) {
+        $.ajax({
+            url: urlController,
+            type: "PUT",
+            data: JSON.stringify(employee),
+            contentType: "application/json; charset=utf-8", //sử dụng với data là 1 chuỗi string dạng json
+            dataType: "json",
+            success: function (data) {
+                getDataFromAPI();
+            },
+            error: function (error) {
+                alert('Lỗi');
+            }
+        });
+    }
+
+    $(document).ready(function () {
+        getDataFromAPI();
+
+        $("#btnAddMonAn").on('click', function (e) {
+            $('#txtMonAnTen, #txtMonAnMota, #txtMonAnSrc').val('');
+            e.preventDefault();
+            var employee_id = $(this).data('id');
+            $('#waiting-edit').hide();
+            var dialog = $("#dialog-edit").removeClass('hide').dialog({
+                modal: true,
+                title: "<div class='widget-header widget-header-small'><h4 class='smaller'><i class='ace-icon fa fa-check'></i>Nhân viên mới</div>",
+                title_html: true,
+                width: 400,
+                buttons: [
+                    {
+                        text: "Cancel",
+                        "class": "btn btn-minier ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only",
+                        click: function () {                  
+                            $( this ).dialog( "close" ); 
+                        },
+                        text: "Xác nhận",
+                        "class": "btn btn-primary btn-minier ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only",
+                        click: function () {
+                            var newEmployee = {
+                                TenMonAn: $('#txtMonAnTen').val(),
+                                MoTa: $('#txtMonAnMota').val(),
+                                SrcImg: $('#txtMonAnSrc').val(),
+                            };
+                            addNewEmployee(newEmployee);
+                            $(this).dialog("close");
+
+                        }
+                    }
+                ]
+            });
+        });
+    });
+</script>

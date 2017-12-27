@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DatmonanModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="DatHang">
+          <Key>
+            <PropertyRef Name="ID_DonHang" />
+            <PropertyRef Name="ID_MonAn" />
+          </Key>
+          <Property Name="ID_DonHang" Type="int" Nullable="false" />
+          <Property Name="ID_MonAn" Type="int" Nullable="false" />
+          <Property Name="SoLuong" Type="int" />
+        </EntityType>
+        <EntityType Name="DonHang">
+          <Key>
+            <PropertyRef Name="ID_DonHang" />
+            <PropertyRef Name="ID_TaiKhoan" />
+            <PropertyRef Name="ID_NhaHang" />
+          </Key>
+          <Property Name="ID_DonHang" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_TaiKhoan" Type="int" Nullable="false" />
+          <Property Name="ID_NhaHang" Type="int" Nullable="false" />
+          <Property Name="ThoiGian" Type="datetime" />
+          <Property Name="TrangThai" Type="int" />
+        </EntityType>
+        <EntityType Name="GiaBan">
+          <Key>
+            <PropertyRef Name="ID_GiaBan" />
+            <PropertyRef Name="ID_MonAn" />
+          </Key>
+          <Property Name="ID_GiaBan" Type="int" Nullable="false" />
+          <Property Name="ID_MonAn" Type="int" Nullable="false" />
+          <Property Name="GiaBan" Type="nvarchar" MaxLength="50" />
+          <Property Name="GiaKhuyenMai" Type="nvarchar" MaxLength="50" />
+          <Property Name="ThoiGianBatDau" Type="datetime" />
+          <Property Name="ThoiGianKetThuc" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Loai">
+          <Key>
+            <PropertyRef Name="ID_LoaiMonAn" />
+          </Key>
+          <Property Name="ID_LoaiMonAn" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Tên" Type="nvarchar" MaxLength="50" />
+          <Property Name="MoTa" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="LoaiMonAn">
+          <Key>
+            <PropertyRef Name="ID_MonAn" />
+            <PropertyRef Name="ID_LoaiMonAn" />
+          </Key>
+          <Property Name="ID_MonAn" Type="int" Nullable="false" />
+          <Property Name="ID_LoaiMonAn" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MonAn">
+          <Key>
+            <PropertyRef Name="ID_MonAn" />
+          </Key>
+          <Property Name="ID_MonAn" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenMonAn" Type="nvarchar" MaxLength="50" />
+          <Property Name="MoTa" Type="nvarchar" MaxLength="500" />
+          <Property Name="SrcImg" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="MonAnYeuThich">
+          <Key>
+            <PropertyRef Name="ID_TaiKhoan" />
+            <PropertyRef Name="ID_MonAn" />
+          </Key>
+          <Property Name="ID_TaiKhoan" Type="int" Nullable="false" />
+          <Property Name="ID_MonAn" Type="int" Nullable="false" />
+          <Property Name="YeuThich" Type="bit" />
+        </EntityType>
+        <EntityType Name="NhaHang">
+          <Key>
+            <PropertyRef Name="ID_NhaHang" />
+          </Key>
+          <Property Name="ID_NhaHang" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenNhaHang" Type="nvarchar" MaxLength="50" />
+          <Property Name="DiaChi" Type="nvarchar" MaxLength="50" />
+          <Property Name="ViTri" Type="nvarchar" MaxLength="500" />
+          <Property Name="SoDienThoai" Type="nvarchar" MaxLength="50" />
+          <Property Name="MoTa" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="TaiKhoan">
+          <Key>
+            <PropertyRef Name="ID_TaiKhoan" />
+          </Key>
+          <Property Name="ID_TaiKhoan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenTaiKhoan" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="SoDienThoai" Type="nvarchar" MaxLength="50" />
+          <Property Name="TienNap" Type="nvarchar" MaxLength="50" />
+          <Property Name="MatKhau" Type="nvarchar" MaxLength="50" />
+          <Property Name="Online" Type="bit" />
+        </EntityType>
+        <EntityContainer Name="DatmonanModelStoreContainer">
+          <EntitySet Name="DatHang" EntityType="Self.DatHang" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DonHang" EntityType="Self.DonHang" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GiaBan" EntityType="Self.GiaBan" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Loai" EntityType="Self.Loai" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LoaiMonAn" EntityType="Self.LoaiMonAn" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MonAn" EntityType="Self.MonAn" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MonAnYeuThich" EntityType="Self.MonAnYeuThich" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NhaHang" EntityType="Self.NhaHang" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TaiKhoan" EntityType="Self.TaiKhoan" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DatmonanModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="DatHang">
+          <Key>
+            <PropertyRef Name="ID_DonHang" />
+            <PropertyRef Name="ID_MonAn" />
+          </Key>
+          <Property Name="ID_DonHang" Type="Int32" Nullable="false" />
+          <Property Name="ID_MonAn" Type="Int32" Nullable="false" />
+          <Property Name="SoLuong" Type="Int32" />
+        </EntityType>
+        <EntityType Name="DonHang">
+          <Key>
+            <PropertyRef Name="ID_DonHang" />
+            <PropertyRef Name="ID_TaiKhoan" />
+            <PropertyRef Name="ID_NhaHang" />
+          </Key>
+          <Property Name="ID_DonHang" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_TaiKhoan" Type="Int32" Nullable="false" />
+          <Property Name="ID_NhaHang" Type="Int32" Nullable="false" />
+          <Property Name="ThoiGian" Type="DateTime" Precision="3" />
+          <Property Name="TrangThai" Type="Int32" />
+        </EntityType>
+        <EntityType Name="GiaBan">
+          <Key>
+            <PropertyRef Name="ID_GiaBan" />
+            <PropertyRef Name="ID_MonAn" />
+          </Key>
+          <Property Name="ID_GiaBan" Type="Int32" Nullable="false" />
+          <Property Name="ID_MonAn" Type="Int32" Nullable="false" />
+          <Property Name="GiaBan1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GiaKhuyenMai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ThoiGianBatDau" Type="DateTime" Precision="3" />
+          <Property Name="ThoiGianKetThuc" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Loai">
+          <Key>
+            <PropertyRef Name="ID_LoaiMonAn" />
+          </Key>
+          <Property Name="ID_LoaiMonAn" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Tên" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MoTa" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="LoaiMonAn">
+          <Key>
+            <PropertyRef Name="ID_MonAn" />
+            <PropertyRef Name="ID_LoaiMonAn" />
+          </Key>
+          <Property Name="ID_MonAn" Type="Int32" Nullable="false" />
+          <Property Name="ID_LoaiMonAn" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MonAn">
+          <Key>
+            <PropertyRef Name="ID_MonAn" />
+          </Key>
+          <Property Name="ID_MonAn" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenMonAn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MoTa" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="SrcImg" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MonAnYeuThich">
+          <Key>
+            <PropertyRef Name="ID_TaiKhoan" />
+            <PropertyRef Name="ID_MonAn" />
+          </Key>
+          <Property Name="ID_TaiKhoan" Type="Int32" Nullable="false" />
+          <Property Name="ID_MonAn" Type="Int32" Nullable="false" />
+          <Property Name="YeuThich" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="NhaHang">
+          <Key>
+            <PropertyRef Name="ID_NhaHang" />
+          </Key>
+          <Property Name="ID_NhaHang" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenNhaHang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DiaChi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ViTri" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="SoDienThoai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MoTa" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TaiKhoan">
+          <Key>
+            <PropertyRef Name="ID_TaiKhoan" />
+          </Key>
+          <Property Name="ID_TaiKhoan" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenTaiKhoan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SoDienThoai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TienNap" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MatKhau" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Online" Type="Boolean" />
+        </EntityType>
+        <EntityContainer Name="DatmonanEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DatHangs" EntityType="Self.DatHang" />
+          <EntitySet Name="DonHangs" EntityType="Self.DonHang" />
+          <EntitySet Name="GiaBans" EntityType="Self.GiaBan" />
+          <EntitySet Name="Loais" EntityType="Self.Loai" />
+          <EntitySet Name="LoaiMonAns" EntityType="Self.LoaiMonAn" />
+          <EntitySet Name="MonAns" EntityType="Self.MonAn" />
+          <EntitySet Name="MonAnYeuThiches" EntityType="Self.MonAnYeuThich" />
+          <EntitySet Name="NhaHangs" EntityType="Self.NhaHang" />
+          <EntitySet Name="TaiKhoans" EntityType="Self.TaiKhoan" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DatmonanModelStoreContainer" CdmEntityContainer="DatmonanEntities">
+          <EntitySetMapping Name="DatHangs">
+            <EntityTypeMapping TypeName="DatmonanModel.DatHang">
+              <MappingFragment StoreEntitySet="DatHang">
+                <ScalarProperty Name="ID_DonHang" ColumnName="ID_DonHang" />
+                <ScalarProperty Name="ID_MonAn" ColumnName="ID_MonAn" />
+                <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DonHangs">
+            <EntityTypeMapping TypeName="DatmonanModel.DonHang">
+              <MappingFragment StoreEntitySet="DonHang">
+                <ScalarProperty Name="ID_DonHang" ColumnName="ID_DonHang" />
+                <ScalarProperty Name="ID_TaiKhoan" ColumnName="ID_TaiKhoan" />
+                <ScalarProperty Name="ID_NhaHang" ColumnName="ID_NhaHang" />
+                <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GiaBans">
+            <EntityTypeMapping TypeName="DatmonanModel.GiaBan">
+              <MappingFragment StoreEntitySet="GiaBan">
+                <ScalarProperty Name="ID_GiaBan" ColumnName="ID_GiaBan" />
+                <ScalarProperty Name="ID_MonAn" ColumnName="ID_MonAn" />
+                <ScalarProperty Name="GiaBan1" ColumnName="GiaBan" />
+                <ScalarProperty Name="GiaKhuyenMai" ColumnName="GiaKhuyenMai" />
+                <ScalarProperty Name="ThoiGianBatDau" ColumnName="ThoiGianBatDau" />
+                <ScalarProperty Name="ThoiGianKetThuc" ColumnName="ThoiGianKetThuc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Loais">
+            <EntityTypeMapping TypeName="DatmonanModel.Loai">
+              <MappingFragment StoreEntitySet="Loai">
+                <ScalarProperty Name="ID_LoaiMonAn" ColumnName="ID_LoaiMonAn" />
+                <ScalarProperty Name="Tên" ColumnName="Tên" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LoaiMonAns">
+            <EntityTypeMapping TypeName="DatmonanModel.LoaiMonAn">
+              <MappingFragment StoreEntitySet="LoaiMonAn">
+                <ScalarProperty Name="ID_MonAn" ColumnName="ID_MonAn" />
+                <ScalarProperty Name="ID_LoaiMonAn" ColumnName="ID_LoaiMonAn" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MonAns">
+            <EntityTypeMapping TypeName="DatmonanModel.MonAn">
+              <MappingFragment StoreEntitySet="MonAn">
+                <ScalarProperty Name="ID_MonAn" ColumnName="ID_MonAn" />
+                <ScalarProperty Name="TenMonAn" ColumnName="TenMonAn" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+                <ScalarProperty Name="SrcImg" ColumnName="SrcImg" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MonAnYeuThiches">
+            <EntityTypeMapping TypeName="DatmonanModel.MonAnYeuThich">
+              <MappingFragment StoreEntitySet="MonAnYeuThich">
+                <ScalarProperty Name="ID_TaiKhoan" ColumnName="ID_TaiKhoan" />
+                <ScalarProperty Name="ID_MonAn" ColumnName="ID_MonAn" />
+                <ScalarProperty Name="YeuThich" ColumnName="YeuThich" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NhaHangs">
+            <EntityTypeMapping TypeName="DatmonanModel.NhaHang">
+              <MappingFragment StoreEntitySet="NhaHang">
+                <ScalarProperty Name="ID_NhaHang" ColumnName="ID_NhaHang" />
+                <ScalarProperty Name="TenNhaHang" ColumnName="TenNhaHang" />
+                <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+                <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+                <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TaiKhoans">
+            <EntityTypeMapping TypeName="DatmonanModel.TaiKhoan">
+              <MappingFragment StoreEntitySet="TaiKhoan">
+                <ScalarProperty Name="ID_TaiKhoan" ColumnName="ID_TaiKhoan" />
+                <ScalarProperty Name="TenTaiKhoan" ColumnName="TenTaiKhoan" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+                <ScalarProperty Name="TienNap" ColumnName="TienNap" />
+                <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+                <ScalarProperty Name="Online" ColumnName="Online" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

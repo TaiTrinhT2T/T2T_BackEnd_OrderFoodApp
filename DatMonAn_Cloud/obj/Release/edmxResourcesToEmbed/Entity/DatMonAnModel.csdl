@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatmonanModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DatHang">
+    <Key>
+      <PropertyRef Name="ID_DonHang" />
+      <PropertyRef Name="ID_MonAn" />
+    </Key>
+    <Property Name="ID_DonHang" Type="Int32" Nullable="false" />
+    <Property Name="ID_MonAn" Type="Int32" Nullable="false" />
+    <Property Name="SoLuong" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DonHang">
+    <Key>
+      <PropertyRef Name="ID_DonHang" />
+      <PropertyRef Name="ID_TaiKhoan" />
+      <PropertyRef Name="ID_NhaHang" />
+    </Key>
+    <Property Name="ID_DonHang" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_TaiKhoan" Type="Int32" Nullable="false" />
+    <Property Name="ID_NhaHang" Type="Int32" Nullable="false" />
+    <Property Name="ThoiGian" Type="DateTime" Precision="3" />
+    <Property Name="TrangThai" Type="Int32" />
+  </EntityType>
+  <EntityType Name="GiaBan">
+    <Key>
+      <PropertyRef Name="ID_GiaBan" />
+      <PropertyRef Name="ID_MonAn" />
+    </Key>
+    <Property Name="ID_GiaBan" Type="Int32" Nullable="false" />
+    <Property Name="ID_MonAn" Type="Int32" Nullable="false" />
+    <Property Name="GiaBan1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GiaKhuyenMai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ThoiGianBatDau" Type="DateTime" Precision="3" />
+    <Property Name="ThoiGianKetThuc" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Loai">
+    <Key>
+      <PropertyRef Name="ID_LoaiMonAn" />
+    </Key>
+    <Property Name="ID_LoaiMonAn" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tên" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MoTa" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="LoaiMonAn">
+    <Key>
+      <PropertyRef Name="ID_MonAn" />
+      <PropertyRef Name="ID_LoaiMonAn" />
+    </Key>
+    <Property Name="ID_MonAn" Type="Int32" Nullable="false" />
+    <Property Name="ID_LoaiMonAn" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MonAn">
+    <Key>
+      <PropertyRef Name="ID_MonAn" />
+    </Key>
+    <Property Name="ID_MonAn" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenMonAn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MoTa" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="SrcImg" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="MonAnYeuThich">
+    <Key>
+      <PropertyRef Name="ID_TaiKhoan" />
+      <PropertyRef Name="ID_MonAn" />
+    </Key>
+    <Property Name="ID_TaiKhoan" Type="Int32" Nullable="false" />
+    <Property Name="ID_MonAn" Type="Int32" Nullable="false" />
+    <Property Name="YeuThich" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="NhaHang">
+    <Key>
+      <PropertyRef Name="ID_NhaHang" />
+    </Key>
+    <Property Name="ID_NhaHang" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenNhaHang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DiaChi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ViTri" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="SoDienThoai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MoTa" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TaiKhoan">
+    <Key>
+      <PropertyRef Name="ID_TaiKhoan" />
+    </Key>
+    <Property Name="ID_TaiKhoan" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenTaiKhoan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SoDienThoai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TienNap" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MatKhau" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Online" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="DatmonanEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DatHangs" EntityType="Self.DatHang" />
+    <EntitySet Name="DonHangs" EntityType="Self.DonHang" />
+    <EntitySet Name="GiaBans" EntityType="Self.GiaBan" />
+    <EntitySet Name="Loais" EntityType="Self.Loai" />
+    <EntitySet Name="LoaiMonAns" EntityType="Self.LoaiMonAn" />
+    <EntitySet Name="MonAns" EntityType="Self.MonAn" />
+    <EntitySet Name="MonAnYeuThiches" EntityType="Self.MonAnYeuThich" />
+    <EntitySet Name="NhaHangs" EntityType="Self.NhaHang" />
+    <EntitySet Name="TaiKhoans" EntityType="Self.TaiKhoan" />
+  </EntityContainer>
+</Schema>
